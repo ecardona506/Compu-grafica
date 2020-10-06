@@ -2,11 +2,11 @@
 
 planta::planta() {}
 
-void planta::abrirMalla(char* path) {
+void planta::abrirMalla() {
     objmodel_ptr = NULL;
     if (!objmodel_ptr)
     {
-        objmodel_ptr = glmReadOBJ(path);
+        objmodel_ptr = glmReadOBJ("./modelos/planta1.obj");
         if (!objmodel_ptr)
             exit(0);
 

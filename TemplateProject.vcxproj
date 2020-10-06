@@ -104,10 +104,11 @@
     <ClInclude Include="glew\include\Gl\wglew.h" />
     <ClInclude Include="glm.h" />
     <ClInclude Include="jupiter.h" />
+    <ClInclude Include="planta.h" />
     <ClInclude Include="Proyector.h" />
     <ClInclude Include="Maceta.h" />
+    <ClInclude Include="puerta.h" />
     <ClInclude Include="Teclado.h" />
-    <ClInclude Include="Objeto.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cwc\source\glApplication.cpp" />
@@ -139,10 +140,11 @@
     <ClCompile Include="glew\source\glew.c" />
     <ClCompile Include="glm.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Objeto.cpp" />
     <ClCompile Include="Maceta.cpp" />
+    <ClCompile Include="planta.cpp" />
     <ClCompile Include="Proyector.cpp" />
     <ClCompile Include="jupiter.cpp" />
+    <ClCompile Include="puerta.cpp" />
     <ClCompile Include="Teclado.cpp" />
   </ItemGroup>
   <ItemGroup>

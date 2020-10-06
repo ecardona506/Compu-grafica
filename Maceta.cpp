@@ -4,7 +4,7 @@ void Maceta::abrirMalla() {
     this->objmodel_ptr = NULL;
     if (!this->objmodel_ptr)
     {
-        this->objmodel_ptr = glmReadOBJ("./modelos/flowerpot.obj");
+        this->objmodel_ptr = glmReadOBJ("./modelos/flowerpot1.obj");
         if (!objmodel_ptr)
             exit(0);
         glmUnitize(this->objmodel_ptr);

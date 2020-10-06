@@ -75,11 +75,12 @@
     <ClInclude Include="glm.h">
       <Filter>glm</Filter>
     </ClInclude>
-    <ClInclude Include="Objeto.h" />
     <ClInclude Include="Teclado.h" />
     <ClInclude Include="Maceta.h" />
     <ClInclude Include="Proyector.h" />
     <ClInclude Include="jupiter.h" />
+    <ClInclude Include="puerta.h" />
+    <ClInclude Include="planta.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glew\source\glew.c">
@@ -167,11 +168,12 @@
     <ClCompile Include="glm.cpp">
       <Filter>glm</Filter>
     </ClCompile>
-    <ClCompile Include="Objeto.cpp" />
     <ClCompile Include="Teclado.cpp" />
     <ClCompile Include="Maceta.cpp" />
     <ClCompile Include="Proyector.cpp" />
     <ClCompile Include="jupiter.cpp" />
+    <ClCompile Include="puerta.cpp" />
+    <ClCompile Include="planta.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="freeglut\source\freeglutdll.def">

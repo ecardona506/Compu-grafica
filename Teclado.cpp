@@ -4,7 +4,7 @@ void Teclado::abrirMalla() {
     this->objmodel_ptr = NULL;
     if (!this->objmodel_ptr)
     {
-        this->objmodel_ptr = glmReadOBJ("./modelos/paneles.obj");
+        this->objmodel_ptr = glmReadOBJ("./modelos/Paneles.obj");
         if (!objmodel_ptr)
             exit(0);
         glmUnitize(this->objmodel_ptr);
@@ -19,6 +19,6 @@ void Teclado::dibujarMalla(float x, float y, float z) {
     this->z = z;
     glPushMatrix();
     glTranslatef(x, y, z);
-    glmDraw(objmodel_ptr, GLM_SMOOTH | GLM_MATERIAL);
+    glmDraw(objmodel_ptr, GLM_SMOOTH);
     glPopMatrix();
 }

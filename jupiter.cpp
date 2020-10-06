@@ -3,11 +3,11 @@
 
 jupiter::jupiter() {}
 
-void jupiter::abrirMalla(char* path) {
+void jupiter::abrirMalla() {
     objmodel_ptr = NULL;
     if (!objmodel_ptr)
     {
-        objmodel_ptr = glmReadOBJ(path);
+        objmodel_ptr = glmReadOBJ("./modelos/jupiter.obj");
         if (!objmodel_ptr)
             exit(0);
 
@@ -19,7 +19,7 @@ void jupiter::abrirMalla(char* path) {
 void jupiter::dibujarMalla(float x, float y, float z) {
     glPushMatrix();
     glTranslatef(x, y, z);
-    glmDraw(objmodel_ptr, GLM_SMOOTH | GLM_MATERIAL);
+    glmDraw(objmodel_ptr, GLM_SMOOTH);
     glPopMatrix();
 
 }
