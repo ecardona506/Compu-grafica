@@ -1,0 +1,4 @@
+﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  main.cpp
+D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Objetos\main.cpp(47,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  TemplateProject.vcxproj -> D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Objetos\Debug\TemplateProject.exe

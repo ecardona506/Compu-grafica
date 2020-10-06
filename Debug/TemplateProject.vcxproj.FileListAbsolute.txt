@@ -1,0 +1,4 @@
+D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Tetera\Debug\TemplateProject.exe
+D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Tetera\Debug\TemplateProject.pdb
+D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Objetos\Debug\TemplateProject.exe
+D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Objetos\Debug\TemplateProject.pdb
