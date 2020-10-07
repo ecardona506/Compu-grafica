@@ -81,6 +81,7 @@
     <ClInclude Include="jupiter.h" />
     <ClInclude Include="puerta.h" />
     <ClInclude Include="planta.h" />
+    <ClInclude Include="Mesa.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="glew\source\glew.c">
@@ -174,6 +175,7 @@
     <ClCompile Include="jupiter.cpp" />
     <ClCompile Include="puerta.cpp" />
     <ClCompile Include="planta.cpp" />
+    <ClCompile Include="Mesa.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="freeglut\source\freeglutdll.def">

@@ -7,7 +7,6 @@ class planta
 {
 	GLMmodel* objmodel_ptr;
 public:
-	planta();
 	void abrirMalla();
 	void dibujarMalla(float x, float y, float z);
 };

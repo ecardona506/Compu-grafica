@@ -1,40 +1,57 @@
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\vc142.pdb
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\vc142.idb
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\glapplication.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\glsl.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\glutwindow.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\glwindow.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\glm.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\main.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_ext.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_font.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_font_data.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_gamemode.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_geometry.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_glutfont_definitions.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_init.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_joystick.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_main.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_menu.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_misc.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_overlay.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_state.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_stroke_mono_roman.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_stroke_roman.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_structure.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_teapot.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_videoresize.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_window.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\glew.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_callbacks.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_cursor.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\freeglut_display.obj
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.exe
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.ilk
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.pdb
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.tlog\cl.command.1.tlog
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.tlog\cl.read.1.tlog
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.tlog\cl.write.1.tlog
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.tlog\link.command.1.tlog
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.tlog\link.read.1.tlog
-d:\users\usuario\documents\documentos universidad\octavo\computación gráfica\tetera\debug\templateproject.tlog\link.write.1.tlog
+d:\documents\github\compu-grafica\debug\vc142.pdb
+d:\documents\github\compu-grafica\debug\vc142.idb
+d:\documents\github\compu-grafica\debug\glapplication.obj
+d:\documents\github\compu-grafica\debug\glsl.obj
+d:\documents\github\compu-grafica\debug\glutwindow.obj
+d:\documents\github\compu-grafica\debug\glwindow.obj
+d:\documents\github\compu-grafica\debug\glm.obj
+d:\documents\github\compu-grafica\debug\main.obj
+d:\documents\github\compu-grafica\debug\maceta.obj
+d:\documents\github\compu-grafica\debug\planta.obj
+d:\documents\github\compu-grafica\debug\proyector.obj
+d:\documents\github\compu-grafica\debug\jupiter.obj
+d:\documents\github\compu-grafica\debug\puerta.obj
+d:\documents\github\compu-grafica\debug\teclado.obj
+d:\documents\github\compu-grafica\debug\freeglut_ext.obj
+d:\documents\github\compu-grafica\debug\freeglut_font.obj
+d:\documents\github\compu-grafica\debug\freeglut_font_data.obj
+d:\documents\github\compu-grafica\debug\freeglut_gamemode.obj
+d:\documents\github\compu-grafica\debug\freeglut_geometry.obj
+d:\documents\github\compu-grafica\debug\freeglut_glutfont_definitions.obj
+d:\documents\github\compu-grafica\debug\freeglut_init.obj
+d:\documents\github\compu-grafica\debug\freeglut_joystick.obj
+d:\documents\github\compu-grafica\debug\freeglut_main.obj
+d:\documents\github\compu-grafica\debug\freeglut_menu.obj
+d:\documents\github\compu-grafica\debug\freeglut_misc.obj
+d:\documents\github\compu-grafica\debug\freeglut_overlay.obj
+d:\documents\github\compu-grafica\debug\freeglut_state.obj
+d:\documents\github\compu-grafica\debug\freeglut_stroke_mono_roman.obj
+d:\documents\github\compu-grafica\debug\freeglut_stroke_roman.obj
+d:\documents\github\compu-grafica\debug\freeglut_structure.obj
+d:\documents\github\compu-grafica\debug\freeglut_teapot.obj
+d:\documents\github\compu-grafica\debug\freeglut_videoresize.obj
+d:\documents\github\compu-grafica\debug\freeglut_window.obj
+d:\documents\github\compu-grafica\debug\glew.obj
+d:\documents\github\compu-grafica\debug\freeglut_callbacks.obj
+d:\documents\github\compu-grafica\debug\freeglut_cursor.obj
+d:\documents\github\compu-grafica\debug\freeglut_display.obj
+d:\documents\github\compu-grafica\debug\mesa.obj
+d:\documents\github\compu-grafica\debug\templateproject.exe
+d:\documents\github\compu-grafica\debug\templateproject.ilk
+d:\documents\github\compu-grafica\debug\templateproject.pdb
+d:\documents\github\compu-grafica\debug\objeto.obj
+d:\documents\github\compu-grafica\debug\source.obj
+d:\documents\github\compu-grafica\debug\glapplication.nativecodeanalysis.xml
+d:\documents\github\compu-grafica\debug\glm.nativecodeanalysis.xml
+d:\documents\github\compu-grafica\debug\glsl.nativecodeanalysis.xml
+d:\documents\github\compu-grafica\debug\glutwindow.nativecodeanalysis.xml
+d:\documents\github\compu-grafica\debug\glwindow.nativecodeanalysis.xml
+d:\documents\github\compu-grafica\debug\templateproject.tlog\cl.command.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\cl.read.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\cl.write.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\link.17228.delete.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\link.9848.delete.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\link.command.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\link.delete.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\link.read.1.tlog
+d:\documents\github\compu-grafica\debug\templateproject.tlog\link.write.1.tlog

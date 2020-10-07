@@ -1,7 +1,5 @@
 #include "Mesa.h"
 
-Mesa::Mesa() {}
-
 void Mesa::abrirMalla() {
     this->objmodel_ptr = NULL;
     if (!this->objmodel_ptr)

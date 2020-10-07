@@ -1,7 +1,5 @@
 #include "planta.h"
 
-planta::planta() {}
-
 void planta::abrirMalla() {
     objmodel_ptr = NULL;
     if (!objmodel_ptr)

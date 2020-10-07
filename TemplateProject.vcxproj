@@ -104,6 +104,7 @@
     <ClInclude Include="glew\include\Gl\wglew.h" />
     <ClInclude Include="glm.h" />
     <ClInclude Include="jupiter.h" />
+    <ClInclude Include="Mesa.h" />
     <ClInclude Include="planta.h" />
     <ClInclude Include="Proyector.h" />
     <ClInclude Include="Maceta.h" />
@@ -141,6 +142,7 @@
     <ClCompile Include="glm.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Maceta.cpp" />
+    <ClCompile Include="Mesa.cpp" />
     <ClCompile Include="planta.cpp" />
     <ClCompile Include="Proyector.cpp" />
     <ClCompile Include="jupiter.cpp" />

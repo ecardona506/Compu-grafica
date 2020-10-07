@@ -2,3 +2,5 @@ D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\T
 D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Tetera\Debug\TemplateProject.pdb
 D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Objetos\Debug\TemplateProject.exe
 D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Objetos\Debug\TemplateProject.pdb
+D:\Documents\GitHub\Compu-grafica\Debug\TemplateProject.exe
+D:\Documents\GitHub\Compu-grafica\Debug\TemplateProject.pdb

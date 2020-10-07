@@ -16,6 +16,7 @@
 #include "jupiter.h"
 #include "puerta.h"
 #include "planta.h"
+#include "Mesa.h"
 //-----------------------------------------------------------------------------
 
 
@@ -35,6 +36,7 @@ protected:
    jupiter planet;
    puerta door;
    planta flower;
+   Mesa table;
 
 public:
 	myWindow(){}
@@ -46,33 +48,50 @@ public:
       //timer010 = 0.09; //for screenshot!
       glPushMatrix();
       if (shader) shader->begin();
+          //Translación para visualización
           glTranslatef(0, 0, -10);
           //Comentar esta linea de abajo para la rotación
-          //glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
+          glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
 
+          //Proyector y Holograma
           glPushMatrix();
-            glRotatef(45, 1, 0, 0);
-            flowerpot.dibujarMalla(0, 0, -5);
-            holotable.dibujarMalla(0, 0, -2);
+            holotable.dibujarMalla(0, 0, 0);
             planet.dibujarMalla(0, 1, 0);
-            door.dibujarMalla(-5, 1, 3);
-            flower.dibujarMalla(0, 0, 2);
-            
+          glPopMatrix();
+          //Teclados
+          glPushMatrix();
+            glTranslatef(-4, 0.5, 0);
+            keyboard.dibujarMalla(0, 0, 0);
             glPushMatrix();
-                glTranslatef(-4, 0.5, 0);
-                keyboard.dibujarMalla(0, 0, 0);
+                glRotatef(45, 0, 1, 0);
+                keyboard.dibujarMalla(-1, 0, 2);
+            glPopMatrix();
+            glPushMatrix();
+                glRotatef(-45, 0, 1, 0);
+                keyboard.dibujarMalla(-1, 0, -2);
+            glPopMatrix();
+
+            //Puerta
+            glPushMatrix();
+                glTranslatef(7,0,0);
+                glRotatef(90, 0, 1, 0);
+                glScalef(2.0, 2.0, 2.0);
+                door.dibujarMalla(0, 0.5, 0);
+            glPopMatrix();
+
+            //Mesa con Ralph
+            glPushMatrix();
+                glTranslatef(10, 0, 0);
+                table.dibujarMalla(0, 0, 0);
                 glPushMatrix();
-                    glRotatef(45, 0, 1, 0);
-                    keyboard.dibujarMalla(-1, 0, 2);
+                    glScalef(0.7,0.7,0.7);
+                    flowerpot.dibujarMalla(0, 1.4, 0);
                 glPopMatrix();
                 glPushMatrix();
-                    glRotatef(-45, 0, 1, 0);
-                    keyboard.dibujarMalla(-1, 0, -2);
+                    flower.dibujarMalla(-0.5,1.3,0);
                 glPopMatrix();
             glPopMatrix();
-            
-          glPopMatrix();
-
+        glPopMatrix();
 
 
       if (shader) shader->end();
@@ -91,13 +110,12 @@ public:
 	virtual void OnInit()
 	{
         keyboard.abrirMalla();
-        
         flowerpot.abrirMalla();
         planet.abrirMalla();
         door.abrirMalla();
         flower.abrirMalla();
         holotable.abrirMalla();
-        
+        table.abrirMalla();
 
 		glClearColor(0.5f, 0.5f, 1.0f, 0.0f);
 		glShadeModel(GL_SMOOTH);
