@@ -37,21 +37,36 @@ protected:
    puerta door;
    planta flower;
    Mesa table;
+   float posCamX;
+   bool movXI, movXD;
 
 public:
 	myWindow(){}
+
+    void moverCamara() {
+        if (movXI) {
+            posCamX = posCamX - 0.5;
+        }
+        if(movXD){
+            posCamX = posCamX + 0.5;
+        }
+        glTranslatef(posCamX, 0, 0);
+    }
 
 	virtual void OnRender(void)
 	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
       //timer010 = 0.09; //for screenshot!
+
+      //glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
       glPushMatrix();
+      //Simulación de camara
+      moverCamara();
       if (shader) shader->begin();
           //Translación para visualización
           glTranslatef(0, 0, -10);
           //Comentar esta linea de abajo para la rotación
-          glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
 
           //Proyector y Holograma
           glPushMatrix();
@@ -134,6 +149,9 @@ public:
       bUp = true;
 
       DemoLight();
+      posCamX = 0;
+      movXI = false;
+      movXD = false;
 
 	}
 
@@ -164,7 +182,10 @@ public:
 		if (cAscii == 27) // 0x1b = ESC
 		{
 			this->Close(); // Close Window!
-		} 
+		}
+        else if (cAscii == 'a')  movXI = true;
+        else if (cAscii == 'd')  movXD = true;
+        
 	};
 
 	virtual void OnKeyUp(int nKey, char cAscii)
@@ -173,6 +194,9 @@ public:
          shader->enable();
       else if (cAscii == 'f') // f: Fixed Function
          shader->disable();
+
+      else if (cAscii == 'a')  movXI = false;
+      else if (cAscii == 'd')  movXD = false;
 	}
 
    void UpdateTimer()
@@ -238,12 +262,12 @@ public:
      GLfloat light_Ka[]  = {1.0f, 0.5f, 0.5f, 1.0f};
      GLfloat light_Kd[]  = {1.0f, 0.1f, 0.1f, 1.0f};
      GLfloat light_Ks[]  = {1.0f, 1.0f, 1.0f, 1.0f};
-
+     /*
      glLightfv(GL_LIGHT0, GL_POSITION, light_pos);
      glLightfv(GL_LIGHT0, GL_AMBIENT, light_Ka);
      glLightfv(GL_LIGHT0, GL_DIFFUSE, light_Kd);
      glLightfv(GL_LIGHT0, GL_SPECULAR, light_Ks);
-
+     */
      // -------------------------------------------
      // Material parameters:
 
@@ -252,12 +276,13 @@ public:
      GLfloat material_Ks[] = {0.8f, 0.8f, 0.0f, 1.0f};
      GLfloat material_Ke[] = {0.1f, 0.0f, 0.0f, 0.0f};
      GLfloat material_Se = 20.0f;
-
+     /*
      glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, material_Ka);
      glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, material_Kd);
      glMaterialfv(GL_FRONT_AND_BACK, GL_SPECULAR, material_Ks);
      glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, material_Ke);
      glMaterialf(GL_FRONT_AND_BACK, GL_SHININESS, material_Se);
+     */
    }
 };
 

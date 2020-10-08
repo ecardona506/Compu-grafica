@@ -1,7 +1,8 @@
 ﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
   main.cpp
-D:\Documents\GitHub\Compu-grafica\main.cpp(54,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-D:\Documents\GitHub\Compu-grafica\main.cpp(87,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-D:\Documents\GitHub\Compu-grafica\main.cpp(88,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\Documents\GitHub\Compu-grafica\main.cpp(91,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-  TemplateProject.vcxproj -> D:\Documents\GitHub\Compu-grafica\Debug\TemplateProject.exe
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(48,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(68,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(101,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(102,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(105,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  TemplateProject.vcxproj -> G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\Debug\TemplateProject.exe
