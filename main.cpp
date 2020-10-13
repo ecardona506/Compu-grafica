@@ -37,20 +37,30 @@ protected:
    puerta door;
    planta flower;
    Mesa table;
+   /*movimiento en X*/
    float posCamX;
    bool movXI, movXD;
+   /*movimiento en Y*/
+   float posCamY;
+   bool movYI, movYS;
 
 public:
 	myWindow(){}
 
     void moverCamara() {
         if (movXI) {
-            posCamX = posCamX - 0.5;
-        }
-        if(movXD){
             posCamX = posCamX + 0.5;
         }
-        glTranslatef(posCamX, 0, 0);
+        if(movXD){
+            posCamX = posCamX - 0.5;
+        }
+        if (movYI) {
+            posCamY = posCamY + 0.5;
+        }
+        if (movYS) {
+            posCamY = posCamY - 0.5;
+        }
+        glTranslatef(posCamX, posCamY, 0);
     }
 
 	virtual void OnRender(void)
@@ -59,7 +69,7 @@ public:
 	
       //timer010 = 0.09; //for screenshot!
 
-      //glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
+      
       glPushMatrix();
       //Simulación de camara
       moverCamara();
@@ -67,7 +77,7 @@ public:
           //Translación para visualización
           glTranslatef(0, 0, -10);
           //Comentar esta linea de abajo para la rotación
-
+          //glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
           //Proyector y Holograma
           glPushMatrix();
             holotable.dibujarMalla(0, 0, 0);
@@ -87,12 +97,14 @@ public:
             glPopMatrix();
 
             //Puerta
+            /*
             glPushMatrix();
                 glTranslatef(7,0,0);
                 glRotatef(90, 0, 1, 0);
                 glScalef(2.0, 2.0, 2.0);
                 door.dibujarMalla(0, 0.5, 0);
             glPopMatrix();
+            */
 
             //Mesa con Ralph
             glPushMatrix();
@@ -124,10 +136,18 @@ public:
 	// is already available!
 	virtual void OnInit()
 	{
+
+        posCamX = 0.0;
+        posCamY = 0.0;
+        movYI = false;
+        movYS = false;
+        movXI = false;
+        movXD = false;
+
         keyboard.abrirMalla();
         flowerpot.abrirMalla();
         planet.abrirMalla();
-        door.abrirMalla();
+        //door.abrirMalla();
         flower.abrirMalla();
         holotable.abrirMalla();
         table.abrirMalla();
@@ -149,9 +169,6 @@ public:
       bUp = true;
 
       DemoLight();
-      posCamX = 0;
-      movXI = false;
-      movXD = false;
 
 	}
 
@@ -185,6 +202,8 @@ public:
 		}
         else if (cAscii == 'a')  movXI = true;
         else if (cAscii == 'd')  movXD = true;
+        else if (cAscii == 'w')  movYS = true;
+        else if (cAscii == 's')  movYI = true;
         
 	};
 
@@ -197,6 +216,8 @@ public:
 
       else if (cAscii == 'a')  movXI = false;
       else if (cAscii == 'd')  movXD = false;
+      if (cAscii == 'w')  movYS = false;
+      if (cAscii == 's')  movYI = false;
 	}
 
    void UpdateTimer()

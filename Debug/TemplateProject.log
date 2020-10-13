@@ -1,8 +1,10 @@
 ﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
   main.cpp
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(48,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(68,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(101,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(102,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(105,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(52,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(55,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(58,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(61,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(114,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(115,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(118,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   TemplateProject.vcxproj -> G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\Debug\TemplateProject.exe
