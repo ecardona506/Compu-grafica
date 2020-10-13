@@ -9,6 +9,6 @@ class jupiter
 public:
 	jupiter();
 	void abrirMalla();
-	void dibujarMalla(float x, float y, float z);
+	void dibujarMalla(float x, float y, float z, GLuint texid);
 };
 

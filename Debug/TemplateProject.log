@@ -1,10 +1,73 @@
 ﻿cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
   main.cpp
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(52,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(55,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(58,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(61,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(114,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(115,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(118,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(57,16): warning C4101: 'h': variable local sin referencia
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(57,13): warning C4101: 'w': variable local sin referencia
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(89,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(92,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(95,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(98,31): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(147,1): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(148,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\main.cpp(151,1): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+cl : línea de comandos warning D9035: La opción 'Gm' está desusada y se quitará en próximas versiones
+  glew.c
+  freeglut_window.c
+  fgSetupPixelFormat(): there is still some work to do here!
+  freeglut_videoresize.c
+  freeglut_teapot.c
+  freeglut_structure.c
+  freeglut_stroke_roman.c
+  freeglut_stroke_mono_roman.c
+  freeglut_state.c
+  freeglut_overlay.c
+  freeglut_misc.c
+  freeglut_menu.c
+  freeglut_main.c
+  freeglut_joystick.c
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_joystick.c(1000,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : vea la declaración de 'sprintf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_joystick.c(1012,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : vea la declaración de 'sprintf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_joystick.c(1020,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : vea la declaración de 'sprintf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_joystick.c(1249,1): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(338): message : vea la declaración de 'strncpy'
+  freeglut_init.c
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_init.c(520,1): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1191): message : vea la declaración de 'getenv'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_init.c(524,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_init.c(533,1): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(1191): message : vea la declaración de 'getenv'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_init.c(713,1): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(440): message : vea la declaración de 'strtok'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_init.c(883,1): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\string.h(440): message : vea la declaración de 'strtok'
+  freeglut_glutfont_definitions.c
+  freeglut_geometry.c
+  freeglut_gamemode.c
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_gamemode.c(393,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_gamemode.c(395,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_gamemode.c(396,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_gamemode.c(397,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_gamemode.c(398,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_gamemode.c(399,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\freeglut\source\freeglut_gamemode.c(400,1): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(2263): message : vea la declaración de 'sscanf'
+  freeglut_font_data.c
+  freeglut_font.c
+  freeglut_ext.c
+  Generando código...
+  Compilando...
+  freeglut_display.c
+  freeglut_cursor.c
+  freeglut_callbacks.c
+  Generando código...
+glApplication.obj : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificaci¾n '/SAFESEH'
   TemplateProject.vcxproj -> G:\Universidad\Noveno\Compu Grafica\Tetera_prueba\Compu-grafica\Debug\TemplateProject.exe

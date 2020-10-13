@@ -17,6 +17,7 @@
 #include "puerta.h"
 #include "planta.h"
 #include "Mesa.h"
+#include <FreeImage.h>
 //-----------------------------------------------------------------------------
 
 
@@ -24,7 +25,7 @@ class myWindow : public cwc::glutWindow
 {
 protected:
    cwc::glShaderManager SM;
-   cwc::glShader *shader;
+   cwc::glShader *shader, *shader1;
    GLuint ProgramObject;
    clock_t time0,time1;
    float timer010;  // timer counting 0->1->0
@@ -43,9 +44,45 @@ protected:
    /*movimiento en Y*/
    float posCamY;
    bool movYI, movYS;
+   //codigo texturas
+   GLMmodel* objmodel_ptr1; //*** Para Textura: variable para objeto texturizado
+   GLuint texid; //*** Para Textura: variable que almacena el identificador de textura
 
 public:
 	myWindow(){}
+
+    //*** Para Textura: aqui adiciono un método que abre la textura en JPG
+    void initialize_textures(void)
+    {
+        int w, h;
+        GLubyte* data = 0;
+        //data = glmReadPPM("soccer_ball_diffuse.ppm", &w, &h);
+        //std::cout << "Read soccer_ball_diffuse.ppm, width = " << w << ", height = " << h << std::endl;
+
+        //dib1 = loadImage("soccer_ball_diffuse.jpg"); //FreeImage
+
+        glGenTextures(1, &texid);
+        glBindTexture(GL_TEXTURE_2D, texid);
+        glTexEnvi(GL_TEXTURE_2D, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+
+        // Loading JPG file
+        FIBITMAP* bitmap = FreeImage_Load(
+            FreeImage_GetFileType("./modelos/bola.jpg", 0),
+            "./modelos/bola.jpg");  //*** Para Textura: esta es la ruta en donde se encuentra la textura
+
+        FIBITMAP* pImage = FreeImage_ConvertTo32Bits(bitmap);
+        int nWidth = FreeImage_GetWidth(pImage);
+        int nHeight = FreeImage_GetHeight(pImage);
+
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, nWidth, nHeight,
+            0, GL_BGRA, GL_UNSIGNED_BYTE, (void*)FreeImage_GetBits(pImage));
+
+        FreeImage_Unload(pImage);
+        //
+        glEnable(GL_TEXTURE_2D);
+    }
 
     void moverCamara() {
         if (movXI) {
@@ -75,13 +112,19 @@ public:
       moverCamara();
       if (shader) shader->begin();
           //Translación para visualización
-          glTranslatef(0, 0, -10);
+          glTranslatef(0, 0, -5);
           //Comentar esta linea de abajo para la rotación
           //glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
           //Proyector y Holograma
           glPushMatrix();
             holotable.dibujarMalla(0, 0, 0);
-            planet.dibujarMalla(0, 1, 0);
+          glPopMatrix();
+          //Puerta
+          glPushMatrix();
+              glTranslatef(7, 0, 0);
+              glRotatef(90, 0, 1, 0);
+              glScalef(2.0, 2.0, 2.0);
+              door.dibujarMalla(0, 0.5, 0);
           glPopMatrix();
           //Teclados
           glPushMatrix();
@@ -95,16 +138,6 @@ public:
                 glRotatef(-45, 0, 1, 0);
                 keyboard.dibujarMalla(-1, 0, -2);
             glPopMatrix();
-
-            //Puerta
-            /*
-            glPushMatrix();
-                glTranslatef(7,0,0);
-                glRotatef(90, 0, 1, 0);
-                glScalef(2.0, 2.0, 2.0);
-                door.dibujarMalla(0, 0.5, 0);
-            glPopMatrix();
-            */
 
             //Mesa con Ralph
             glPushMatrix();
@@ -122,6 +155,15 @@ public:
 
 
       if (shader) shader->end();
+          glPushMatrix();
+              planet.dibujarMalla(0, 1, 0, texid);
+          glPopMatrix();
+
+      if (shader1) shader1->begin();
+            
+            
+      if (shader1) shader1->end();
+
       glutSwapBuffers();
       glPopMatrix();
 
@@ -147,7 +189,7 @@ public:
         keyboard.abrirMalla();
         flowerpot.abrirMalla();
         planet.abrirMalla();
-        //door.abrirMalla();
+        door.abrirMalla();
         flower.abrirMalla();
         holotable.abrirMalla();
         table.abrirMalla();
@@ -159,15 +201,25 @@ public:
 		shader = SM.loadfromFile("vertexshader.txt","fragmentshader.txt"); // load (and compile, link) from file
 		if (shader==0) 
          std::cout << "Error Loading, compiling or linking shader\n";
-      else
-      {
-         ProgramObject = shader->GetProgramObject();
-      }
+         else
+         {
+            ProgramObject = shader->GetProgramObject();
+         }
+
+        shader1 = SM.loadfromFile("vertexshaderT.txt", "fragmentshaderT.txt"); // load (and compile, link) from file
+        if (shader1 == 0)
+            std::cout << "Error Loading, compiling or linking shader\n";
+        else
+        {
+            ProgramObject = shader1->GetProgramObject();
+        }
 
       time0 = clock();
       timer010 = 0.0f;
       bUp = true;
 
+      //*** Para Textura: abrir archivo de textura
+      initialize_textures();
       DemoLight();
 
 	}
