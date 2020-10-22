@@ -44,6 +44,11 @@ protected:
    /*movimiento en Y*/
    float posCamY;
    bool movYI, movYS;
+
+  //mover objeto
+   float movimiento_objeto_x, movimiento_objeto_y;
+   bool mov_objeto_derecha, mov_objeto_izquierda,mov_objeto_arriba, mov_objeto_abajo;
+
    //codigo texturas
    GLMmodel* objmodel_ptr1; //*** Para Textura: variable para objeto texturizado
    GLuint texid; //*** Para Textura: variable que almacena el identificador de textura
@@ -100,6 +105,23 @@ public:
         glTranslatef(posCamX, posCamY, 0);
     }
 
+    void moverObjetopPlaneta() {
+        if (mov_objeto_derecha) {
+            movimiento_objeto_x = movimiento_objeto_x + 0.5;
+        }
+        if (mov_objeto_izquierda) {
+            movimiento_objeto_x = movimiento_objeto_x - 0.5;
+        }
+        if (mov_objeto_arriba) {
+            movimiento_objeto_y = movimiento_objeto_y + 0.5;
+        }
+        if (mov_objeto_abajo) {
+            movimiento_objeto_y = movimiento_objeto_y - 0.5;
+        }
+        
+
+    }
+
 	virtual void OnRender(void)
 	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -110,6 +132,7 @@ public:
       glPushMatrix();
       //Simulación de camara
       moverCamara();
+      moverObjetopPlaneta;
       if (shader) shader->begin();
           //Translación para visualización
           glTranslatef(0, 0, -5);
@@ -117,7 +140,7 @@ public:
           //glRotatef(timer010 * 360, 0.0, 0.1, 0.1);
           //Proyector y Holograma
           glPushMatrix();
-            holotable.dibujarMalla(0, 0, 0);
+            holotable.dibujarMalla((0+movimiento_objeto_x),(0+ movimiento_objeto_y), 0);
           glPopMatrix();
           //Puerta
           glPushMatrix();
@@ -185,6 +208,14 @@ public:
         movYS = false;
         movXI = false;
         movXD = false;
+
+        movimiento_objeto_x = 0.0;
+        movimiento_objeto_y = 0.0;
+        mov_objeto_derecha = false;
+        mov_objeto_izquierda = false;
+        mov_objeto_arriba = false;
+        mov_objeto_abajo = false;
+
 
         keyboard.abrirMalla();
         flowerpot.abrirMalla();
@@ -256,6 +287,10 @@ public:
         else if (cAscii == 'd')  movXD = true;
         else if (cAscii == 'w')  movYS = true;
         else if (cAscii == 's')  movYI = true;
+        else if (cAscii == 'h')  mov_objeto_derecha = true;
+        else if (cAscii == 'k')  mov_objeto_izquierda = true;
+        else if (cAscii == 'u')  mov_objeto_arriba = true;
+        else if (cAscii == 'j')  mov_objeto_abajo = true;
         
 	};
 
@@ -268,9 +303,15 @@ public:
 
       else if (cAscii == 'a')  movXI = false;
       else if (cAscii == 'd')  movXD = false;
+      else if (cAscii == 'h')  mov_objeto_derecha = false;
+      else if (cAscii == 'k')  mov_objeto_izquierda = false;
+      else if (cAscii == 'u')  mov_objeto_arriba = false;
+      else if (cAscii == 'j')  mov_objeto_abajo = false;
       if (cAscii == 'w')  movYS = false;
       if (cAscii == 's')  movYI = false;
-	}
+
+
+    }
 
    void UpdateTimer()
    {
