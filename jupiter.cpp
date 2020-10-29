@@ -7,7 +7,7 @@ void jupiter::abrirMalla() {
     objmodel_ptr = NULL;
     if (!objmodel_ptr)
     {
-        objmodel_ptr = glmReadOBJ("./modelos/bola.obj");
+        objmodel_ptr = glmReadOBJ("./modelos/jupiter1.obj");
         if (!objmodel_ptr)
             exit(0);
 
