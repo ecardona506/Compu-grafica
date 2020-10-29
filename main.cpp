@@ -74,8 +74,8 @@ public:
 
         // Loading JPG file
         FIBITMAP* bitmap = FreeImage_Load(
-            FreeImage_GetFileType("./modelos/bola.jpg", 0),
-            "./modelos/bola.jpg");  //*** Para Textura: esta es la ruta en donde se encuentra la textura
+            FreeImage_GetFileType("./texturas/jupiter.jpg", 0),
+            "./texturas/jupiter.jpg");  //*** Para Textura: esta es la ruta en donde se encuentra la textura
 
         FIBITMAP* pImage = FreeImage_ConvertTo32Bits(bitmap);
         int nWidth = FreeImage_GetWidth(pImage);
@@ -105,7 +105,7 @@ public:
         glTranslatef(posCamX, posCamY, 0);
     }
 
-    void moverObjetopPlaneta() {
+    void moverObjetoPlaneta() {
         if (mov_objeto_derecha) {
             movimiento_objeto_x = movimiento_objeto_x + 0.5;
         }
@@ -132,7 +132,7 @@ public:
       glPushMatrix();
       //Simulación de camara
       moverCamara();
-      moverObjetopPlaneta;
+      moverObjetoPlaneta();
       if (shader) shader->begin();
           //Translación para visualización
           glTranslatef(0, 0, -5);
@@ -178,12 +178,12 @@ public:
 
 
       if (shader) shader->end();
-          glPushMatrix();
-              planet.dibujarMalla(0, 1, 0, texid);
-          glPopMatrix();
+          
 
       if (shader1) shader1->begin();
-            
+        glPushMatrix();
+        planet.dibujarMalla(0, 1, 0, texid);
+        glPopMatrix();
             
       if (shader1) shader1->end();
 

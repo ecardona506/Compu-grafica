@@ -4,3 +4,5 @@ D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\O
 D:\Users\Usuario\Documents\Documentos Universidad\Octavo\Computación gráfica\Objetos\Debug\TemplateProject.pdb
 D:\Documents\GitHub\Compu-grafica\Debug\TemplateProject.exe
 D:\Documents\GitHub\Compu-grafica\Debug\TemplateProject.pdb
+D:\Documents\GitHub\Compu_grafica\Debug\TemplateProject.exe
+D:\Documents\GitHub\Compu_grafica\Debug\TemplateProject.pdb
